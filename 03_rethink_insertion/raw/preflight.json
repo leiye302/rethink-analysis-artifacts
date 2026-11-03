@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "states": 1000,
+  "observations": 2000,
+  "marker_id": 151665,
+  "only_one_inserted_token": true,
+  "SFT_two_piece_tokenization_preserved": true,
+  "H_R_preserved_verbatim": true,
+  "maximum_prefix_tokens": 1324,
+  "reference": "stored SFT Oracle action",
+  "fresh_rollout_or_reasoning": false,
+  "GPU_tested": false
+}

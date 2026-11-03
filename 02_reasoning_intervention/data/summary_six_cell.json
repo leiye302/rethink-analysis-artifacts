@@ -1,0 +1,116 @@
+{
+  "n": 22,
+  "goal_clusters": 10,
+  "means": {
+    "teacher_correct": {
+      "teacher": {
+        "correct_action_probability": 0.8584000661806114,
+        "constrained_top1_accuracy": 0.8636363636363636,
+        "free_action_accuracy": 0.8636363636363636,
+        "free_action_executable": 1,
+        "free_action_format_valid": 1,
+        "free_action_correct_count": 19,
+        "n": 22
+      },
+      "student": {
+        "correct_action_probability": 0.8219183882569443,
+        "constrained_top1_accuracy": 0.8181818181818182,
+        "free_action_accuracy": 0.7727272727272727,
+        "free_action_executable": 0.9545454545454546,
+        "free_action_format_valid": 1,
+        "free_action_correct_count": 17,
+        "n": 22
+      }
+    },
+    "deleted": {
+      "teacher": {
+        "correct_action_probability": 0.6066948249054005,
+        "constrained_top1_accuracy": 0.5909090909090909,
+        "free_action_accuracy": 0.5909090909090909,
+        "free_action_executable": 1,
+        "free_action_format_valid": 1,
+        "free_action_correct_count": 13,
+        "n": 22
+      },
+      "student": {
+        "correct_action_probability": 0.6391610298498763,
+        "constrained_top1_accuracy": 0.7272727272727273,
+        "free_action_accuracy": 0.5909090909090909,
+        "free_action_executable": 0.9545454545454546,
+        "free_action_format_valid": 1,
+        "free_action_correct_count": 13,
+        "n": 22
+      }
+    },
+    "student_wrong": {
+      "teacher": {
+        "correct_action_probability": 0.4452982193240921,
+        "constrained_top1_accuracy": 0.45454545454545453,
+        "free_action_accuracy": 0.45454545454545453,
+        "free_action_executable": 0.9545454545454546,
+        "free_action_format_valid": 1,
+        "free_action_correct_count": 10,
+        "n": 22
+      },
+      "student": {
+        "correct_action_probability": 0.3996263005410614,
+        "constrained_top1_accuracy": 0.4090909090909091,
+        "free_action_accuracy": 0.4090909090909091,
+        "free_action_executable": 0.9545454545454546,
+        "free_action_format_valid": 1,
+        "free_action_correct_count": 9,
+        "n": 22
+      }
+    }
+  },
+  "paired_effects": {
+    "teacher": {
+      "teacher_correct_minus_student_wrong": {
+        "mean_probability_delta": 0.4131018468565193,
+        "goal_cluster_bootstrap_95ci": [
+          0.19066802674673947,
+          0.6392181066035747
+        ],
+        "num_positive": 17,
+        "num_negative": 5,
+        "free_action_accuracy_delta": 0.4090909090909091
+      },
+      "deleted_minus_student_wrong": {
+        "mean_probability_delta": 0.16139660558130842,
+        "goal_cluster_bootstrap_95ci": [
+          -0.005920690969404153,
+          0.4237167589326609
+        ],
+        "num_positive": 14,
+        "num_negative": 8,
+        "free_action_accuracy_delta": 0.13636363636363635
+      }
+    },
+    "student": {
+      "teacher_correct_minus_student_wrong": {
+        "mean_probability_delta": 0.4222920877158829,
+        "goal_cluster_bootstrap_95ci": [
+          0.22202453483492351,
+          0.6356016826086148
+        ],
+        "num_positive": 17,
+        "num_negative": 5,
+        "free_action_accuracy_delta": 0.36363636363636365
+      },
+      "deleted_minus_student_wrong": {
+        "mean_probability_delta": 0.2395347293088149,
+        "goal_cluster_bootstrap_95ci": [
+          0.07970054228945099,
+          0.5013773621248521
+        ],
+        "num_positive": 14,
+        "num_negative": 8,
+        "free_action_accuracy_delta": 0.18181818181818182
+      }
+    }
+  },
+  "cases_sha256": "d9bffbbc856751772f9c720ca2b3805569b163e6b6219ef9f269661a3a5d77da",
+  "scores_sha256": "5746a09c2e0250fee70b9bc341f039c0ac71f6e269af5c63457787a4669e1d9a",
+  "interpretation": "Conditional mechanism audit on reviewed real training states; not held-out episode success.",
+  "teacher_skill_completely_truncated": 0
+}

@@ -1,0 +1,7 @@
+﻿condition,branch,n,hits,non_hits
+teacher_correct,teacher,22,19,3
+teacher_correct,student,22,17,5
+deleted,teacher,22,13,9
+deleted,student,22,13,9
+student_wrong,teacher,22,10,12
+student_wrong,student,22,9,13

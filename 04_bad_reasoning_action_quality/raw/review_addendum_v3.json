@@ -1,0 +1,19 @@
+{
+  "hint_approval_overrides": {
+    "fresh_a8ba1a05ff4a38732eef3577": true
+  },
+  "action_value_overrides": {
+    "fresh_562d5ca76435838b4abee5bd": {
+      "use desklamp 1": null
+    },
+    "fresh_a8ba1a05ff4a38732eef3577": {
+      "use desklamp 1": 1.0
+    }
+  },
+  "basis": "The real environment confirms both use-lamp -> take-mug and take-mug -> use-lamp complete the goal in two valid actions. Both first actions are useful subgoals, not merely executable commands. The pen case's unsupported lamp-order negative is relaxed to unknown, not declared correct without a replay.",
+  "evidence": "budget5h/results/hint_quality_lamp_order.json",
+  "applies_equally_to_all_models_and_conditions": true,
+  "no_R_Good_Bad_label_changed": true,
+  "evaluation_adjudication_only_not_training_data": true,
+  "preserves_original_reviews_and_v2": true
+}

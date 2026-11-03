@@ -1,0 +1,14 @@
+{
+  "hint_approval_overrides": {
+    "fresh_a8ba1a05ff4a38732eef3577": true
+  },
+  "action_value_overrides": {
+    "fresh_562d5ca76435838b4abee5bd": {
+      "use desklamp 1": null
+    }
+  },
+  "basis": "Real environment confirms use-lamp and take-target commute. Taking before use is not a necessary ordering constraint.",
+  "evidence": "budget5h/results/hint_quality_lamp_order.json",
+  "original_v1_review_is_preserved": true,
+  "no_hard_Good_or_Bad_R_label_changed": true
+}

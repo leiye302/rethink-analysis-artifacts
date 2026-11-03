@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "real_GPU_tested": true,
+  "checks": [
+    {
+      "case": 0,
+      "condition": "without_marker",
+      "max_logp_error": 2.288818359375e-05,
+      "max_probability_error": 1.1873884386837119e-07
+    },
+    {
+      "case": 0,
+      "condition": "with_marker",
+      "max_logp_error": 1.9073486328125e-05,
+      "max_probability_error": 8.091584646763295e-08
+    },
+    {
+      "case": 1,
+      "condition": "without_marker",
+      "max_logp_error": 1.52587890625e-05,
+      "max_probability_error": 6.254477083705683e-09
+    },
+    {
+      "case": 1,
+      "condition": "with_marker",
+      "max_logp_error": 1.1444091796875e-05,
+      "max_probability_error": 1.0334945454992805e-08
+    }
+  ]
+}

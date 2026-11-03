@@ -1,0 +1,4 @@
+﻿mode,n_states,n_generations,known_positive,known_zero,unknown,known_reasonable_percent
+forbid,13,208,17,143,48,8.173076923076923
+force,13,208,164,1,43,78.84615384615384
+natural,13,208,64,68,76,30.76923076923077

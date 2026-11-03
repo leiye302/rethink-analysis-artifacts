@@ -1,0 +1,9 @@
+{
+  "complete": true,
+  "states": 1000,
+  "observations": 2000,
+  "results_sha256": "311850a2d06778e54a9af8f1abc8d9125a0cfeb2b57f1b33d445687c198ca3de",
+  "contract_sha256": "754ba2de28b1c9bda249ffce7cb8f437f26397cdefc5cb4ae5b51b23ecb2a888",
+  "finished_unix": 1793681392.3597512,
+  "needs_plotting": true
+}

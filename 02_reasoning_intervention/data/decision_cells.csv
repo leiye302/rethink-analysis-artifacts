@@ -1,0 +1,133 @@
+﻿id,condition,branch,generated_action,reference_hit,executable,format_valid,Q
+train150_state_3005,teacher_correct,teacher,take tissuebox 1 from sidetable 3,True,True,True,0.8158415664872739
+train150_state_3005,teacher_correct,student,go to armchair 1,False,True,True,0.3663619861200633
+train150_state_3005,deleted,teacher,examine sidetable 3,False,True,True,0.005548842789457503
+train150_state_3005,deleted,student,examine sidetable 3,False,True,True,6.244040786927594e-06
+train150_state_3005,student_wrong,teacher,go to sidetable 3,False,False,True,0.0005486605172816086
+train150_state_3005,student_wrong,student,go to sidetable 3,False,False,True,6.0210534443809345e-05
+train150_state_0769,teacher_correct,teacher,take cup 2 from fridge 1,True,True,True,0.9596941723550898
+train150_state_0769,teacher_correct,student,take cup 2 from fridge 1,True,True,True,0.9893937562552051
+train150_state_0769,deleted,teacher,take cup 2 from fridge 1,True,True,True,0.9521947845005325
+train150_state_0769,deleted,student,take cup 2 from fridge 1,True,True,True,0.9976661907308986
+train150_state_0769,student_wrong,teacher,go to cabinet 1,False,True,True,0.22836786537525666
+train150_state_0769,student_wrong,student,go to cabinet 1,False,True,True,0.04473303869336416
+train150_state_0791,teacher_correct,teacher,take cup 2 from fridge 1,True,True,True,0.9640549907046242
+train150_state_0791,teacher_correct,student,take cup 2 from fridge 1,True,True,True,0.9990619107982849
+train150_state_0791,deleted,teacher,take cup 2 from fridge 1,True,True,True,0.9212151926336118
+train150_state_0791,deleted,student,take cup 2 from fridge 1,True,True,True,0.9910769048969249
+train150_state_0791,student_wrong,teacher,go to countertop 1,False,True,True,0.028158494813590344
+train150_state_0791,student_wrong,student,go to countertop 1,False,True,True,0.031045151258661752
+train150_state_2343,teacher_correct,teacher,take knife 1 from countertop 2,True,True,True,0.9870425148005111
+train150_state_2343,teacher_correct,student,take knife 1 from countertop 2,True,True,True,0.9847842374913446
+train150_state_2343,deleted,teacher,take knife 1 from countertop 2,True,True,True,0.48375281425155026
+train150_state_2343,deleted,student,go to drawer 1,False,True,True,0.31481703611706313
+train150_state_2343,student_wrong,teacher,examine countertop 2,False,True,True,0.00044237756045067554
+train150_state_2343,student_wrong,student,examine countertop 2,False,True,True,0.00038516871647465746
+train150_state_2344,teacher_correct,teacher,go to sinkbasin 1,False,True,True,0.1458754070490161
+train150_state_2344,teacher_correct,student,go to sinkbasin 1,False,True,True,0.005951425369503901
+train150_state_2344,deleted,teacher,go to drawer 1,False,True,True,0.2632831480541254
+train150_state_2344,deleted,student,go to drawer 1,False,True,True,0.031002175391691183
+train150_state_2344,student_wrong,teacher,go to drawer 1,False,True,True,0.01718740999402914
+train150_state_2344,student_wrong,student,go to drawer 1,False,True,True,0.003073418858459846
+train150_state_0251,teacher_correct,teacher,take dishsponge 1 from cabinet 2,True,True,True,0.9987852364250702
+train150_state_0251,teacher_correct,student,take dishsponge 1 from cabinet 2,True,True,True,0.9996697557212187
+train150_state_0251,deleted,teacher,take dishsponge 1 from cabinet 2,True,True,True,0.9974120326182452
+train150_state_0251,deleted,student,take dishsponge 1 from cabinet 2,True,True,True,0.9994103514731463
+train150_state_0251,student_wrong,teacher,take dishsponge 1 from cabinet 2,True,True,True,0.9999734285090532
+train150_state_0251,student_wrong,student,take dishsponge 1 from cabinet 2,True,True,True,0.9999919549826818
+train150_state_2538,teacher_correct,teacher,go to microwave 1,True,True,True,0.9999981062041798
+train150_state_2538,teacher_correct,student,go to microwave 1,True,True,True,0.9999990238966683
+train150_state_2538,deleted,teacher,go to microwave 1,True,True,True,0.9934834009149965
+train150_state_2538,deleted,student,go to microwave 1,True,True,True,0.9998360998477033
+train150_state_2538,student_wrong,teacher,go to microwave 1,True,True,True,0.999999960771635
+train150_state_2538,student_wrong,student,go to microwave 1,True,True,True,0.9999999326167862
+train150_state_0994,teacher_correct,teacher,go to microwave 1,False,True,True,0.14375741300708675
+train150_state_0994,teacher_correct,student,go to microwave 1,False,True,True,0.004556904363685596
+train150_state_0994,deleted,teacher,look,False,True,True,0.01038112642808082
+train150_state_0994,deleted,student,go to microwave 1,False,True,True,0.017031232530402757
+train150_state_0994,student_wrong,teacher,go to sinkbasin 1,False,True,True,6.741219971384992e-09
+train150_state_0994,student_wrong,student,go to sinkbasin 1,False,True,True,1.0496690401952465e-10
+train150_state_1161,teacher_correct,teacher,move pencil 2 to desk 1,True,True,True,0.999999946484502
+train150_state_1161,teacher_correct,student,move pencil 2 to desk 1,True,True,True,0.9999998847929379
+train150_state_1161,deleted,teacher,move pencil 2 to desk 1,True,True,True,0.991954217743355
+train150_state_1161,deleted,student,move pencil 2 to desk 1,True,True,True,0.999493353734655
+train150_state_1161,student_wrong,teacher,examine desk 1,False,True,True,0.00015223112412997007
+train150_state_1161,student_wrong,student,examine desk 1,False,True,True,1.6265146063626896e-05
+train150_state_0832,teacher_correct,teacher,take cup 2 from fridge 1,True,True,True,0.9941651544362757
+train150_state_0832,teacher_correct,student,take cup 2 from fridge 1,True,True,True,0.9995625850418094
+train150_state_0832,deleted,teacher,take cup 2 from fridge 1,True,True,True,0.9269685872674653
+train150_state_0832,deleted,student,take cup 2 from fridge 1,True,True,True,0.9957307175009547
+train150_state_0832,student_wrong,teacher,take cup 2 from fridge 1,True,True,True,0.6366299215627641
+train150_state_0832,student_wrong,student,go to microwave 1,False,True,True,0.3185746481973672
+train150_state_2010,teacher_correct,teacher,take butterknife 1 from countertop 1,True,True,True,0.9999527468791722
+train150_state_2010,teacher_correct,student,go to countertop 1,False,False,True,0.9999426915204059
+train150_state_2010,deleted,teacher,take butterknife 1 from countertop 1,True,True,True,0.960563926220557
+train150_state_2010,deleted,student,take butterknife 1 from countertop 1,True,True,True,0.9568201942863231
+train150_state_2010,student_wrong,teacher,take butterknife 1 from countertop 1,True,True,True,0.9999781695289172
+train150_state_2010,student_wrong,student,take butterknife 1 from countertop 1,True,True,True,0.9999942058090702
+train150_state_1052,teacher_correct,teacher,go to diningtable 1,True,True,True,0.9999999141767228
+train150_state_1052,teacher_correct,student,go to diningtable 1,True,True,True,0.9999993832899261
+train150_state_1052,deleted,teacher,heat plate 2 with microwave 1,False,True,True,0.09089797752978834
+train150_state_1052,deleted,student,move plate 2 to diningtable 1,False,False,True,0.5223771200217562
+train150_state_1052,student_wrong,teacher,heat plate 2 with microwave 1,False,True,True,0.015663107350491996
+train150_state_1052,student_wrong,student,heat plate 2 with microwave 1,False,True,True,0.009500243753289015
+train150_state_2400,teacher_correct,teacher,move cellphone 1 to dresser 2,True,True,True,0.9999999963629262
+train150_state_2400,teacher_correct,student,move cellphone 1 to dresser 2,True,True,True,0.9999999992922213
+train150_state_2400,deleted,teacher,move cellphone 1 to dresser 2,True,True,True,0.9970008474710162
+train150_state_2400,deleted,student,move cellphone 1 to dresser 2,True,True,True,0.9998908955535171
+train150_state_2400,student_wrong,teacher,move cellphone 1 to dresser 2,True,True,True,0.9999725297281166
+train150_state_2400,student_wrong,student,move cellphone 1 to dresser 2,True,True,True,0.9999942869035885
+train150_state_2578,teacher_correct,teacher,go to microwave 1,True,True,True,0.9999985352131822
+train150_state_2578,teacher_correct,student,go to microwave 1,True,True,True,0.9999990620675516
+train150_state_2578,deleted,teacher,go to microwave 1,True,True,True,0.893910751235842
+train150_state_2578,deleted,student,go to microwave 1,True,True,True,0.9995184328506934
+train150_state_2578,student_wrong,teacher,go to microwave 1,True,True,True,0.9999992859791591
+train150_state_2578,student_wrong,student,go to microwave 1,True,True,True,0.9999993802331142
+train150_state_0895,teacher_correct,teacher,take plate 2 from diningtable 1,True,True,True,0.9926443043529062
+train150_state_0895,teacher_correct,student,take plate 2 from diningtable 1,True,True,True,0.9998198134098946
+train150_state_0895,deleted,teacher,go to microwave 1,False,True,True,0.02763958015141054
+train150_state_0895,deleted,student,go to stoveburner 1,False,True,True,0.012715180660522499
+train150_state_0895,student_wrong,teacher,go to microwave 1,False,True,True,1.9458581080227733e-06
+train150_state_0895,student_wrong,student,go to microwave 1,False,True,True,2.8179428251827716e-05
+train150_state_1073,teacher_correct,teacher,go to diningtable 1,True,True,True,0.9999999906825366
+train150_state_1073,teacher_correct,student,go to diningtable 1,True,True,True,0.9999999893908641
+train150_state_1073,deleted,teacher,go to diningtable 1,True,True,True,0.9989823880783544
+train150_state_1073,deleted,student,go to diningtable 1,True,True,True,0.9989190500657594
+train150_state_1073,student_wrong,teacher,go to diningtable 1,True,True,True,0.9999999767385305
+train150_state_1073,student_wrong,student,go to diningtable 1,True,True,True,0.9999998918093457
+train150_state_1454,teacher_correct,teacher,take cup 2 from sinkbasin 1,True,True,True,0.9787645232223939
+train150_state_1454,teacher_correct,student,take cup 2 from sinkbasin 1,True,True,True,0.89863097572052
+train150_state_1454,deleted,teacher,go to microwave 1,False,True,True,0.38849456639978236
+train150_state_1454,deleted,student,go to cabinet 2,False,True,True,0.29160259125810917
+train150_state_1454,student_wrong,teacher,go to microwave 1,False,True,True,0.0010256072079907997
+train150_state_1454,student_wrong,student,go to microwave 1,False,True,True,0.009393978948221585
+train150_state_2640,teacher_correct,teacher,cool potato 2 with fridge 1,True,True,True,0.9999999247063122
+train150_state_2640,teacher_correct,student,cool potato 2 with fridge 1,True,True,True,0.9999998399641411
+train150_state_2640,deleted,teacher,cool potato 2 with fridge 1,True,True,True,0.989106906156956
+train150_state_2640,deleted,student,cool potato 2 with fridge 1,True,True,True,0.9914482698355724
+train150_state_2640,student_wrong,teacher,cool potato 2 with fridge 1,True,True,True,0.9669995560741097
+train150_state_2640,student_wrong,student,cool potato 2 with fridge 1,True,True,True,0.6717690090031447
+train150_state_1120,teacher_correct,teacher,go to microwave 1,False,True,True,0.00011860154753381051
+train150_state_1120,teacher_correct,student,go to microwave 1,False,True,True,0.0018022130069836467
+train150_state_1120,deleted,teacher,go to microwave 1,False,True,True,0.011468169338916501
+train150_state_1120,deleted,student,go to microwave 1,False,True,True,0.00738631020173535
+train150_state_1120,student_wrong,teacher,go to sinkbasin 1,False,True,True,5.51098242325194e-06
+train150_state_1120,student_wrong,student,go to sinkbasin 1,False,True,True,1.2417309211189977e-06
+train150_state_2545,teacher_correct,teacher,go to microwave 1,True,True,True,0.9999988102003105
+train150_state_2545,teacher_correct,student,go to microwave 1,True,True,True,0.9999986329128041
+train150_state_2545,deleted,teacher,go to microwave 1,True,True,True,0.9924623592015626
+train150_state_2545,deleted,student,go to microwave 1,True,True,True,0.9999583815558503
+train150_state_2545,student_wrong,teacher,go to microwave 1,True,True,True,0.9999999459089206
+train150_state_2545,student_wrong,student,go to microwave 1,True,True,True,0.9999999454312792
+train150_state_1131,teacher_correct,teacher,take plate 2 from diningtable 1,True,True,True,0.9191335754539981
+train150_state_1131,teacher_correct,student,take plate 2 from diningtable 1,True,True,True,0.8384900344123378
+train150_state_1131,deleted,teacher,go to microwave 1,False,True,True,0.04627004583972988
+train150_state_1131,deleted,student,go to stoveburner 1,False,True,True,0.04629267982043205
+train150_state_1131,student_wrong,teacher,go to cabinet 1,False,True,True,9.311557574438894e-07
+train150_state_1131,student_wrong,student,go to cabinet 1,False,True,True,2.5815043057263317e-07
+train150_state_2535,teacher_correct,teacher,take potato 1 from countertop 1,True,True,True,0.9849760252218263
+train150_state_2535,teacher_correct,student,take potato 1 from countertop 1,True,True,True,0.994180436814402
+train150_state_2535,deleted,teacher,look,False,True,True,0.40429448309347493
+train150_state_2535,deleted,student,take potato 1 from countertop 1,True,True,True,0.8885432443227808
+train150_state_2535,student_wrong,teacher,take potato 1 from countertop 1,True,True,True,0.90145390164809
+train150_state_2535,student_wrong,student,take potato 1 from countertop 1,True,True,True,0.703218201593424

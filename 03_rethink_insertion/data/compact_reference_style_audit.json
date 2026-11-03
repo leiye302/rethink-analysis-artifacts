@@ -1,0 +1,38 @@
+{
+  "states": 1000,
+  "observations": 2000,
+  "points_per_condition": 1000,
+  "repeated_points": 0,
+  "data_changed_or_omitted": false,
+  "source_results_sha256": "311850a2d06778e54a9af8f1abc8d9125a0cfeb2b57f1b33d445687c198ca3de",
+  "Q_without": 0.1208276880630086,
+  "Q_with": 0.6118690232933993,
+  "figure_inches": [
+    8.0,
+    7.5
+  ],
+  "canvas_aspect_ratio": 1.0666666666666667,
+  "main_axis_inches": [
+    4.96,
+    4.92
+  ],
+  "y_display_transform": "asinh(z), both groups identically; ticks label original z",
+  "y_limits": [
+    -6.25,
+    6.25
+  ],
+  "palette": {
+    "without_marker": "#277DA8",
+    "with_marker": "#D9772E"
+  },
+  "same_density_bandwidth_as_previous": 0.6605238611291134,
+  "density_coordinate": "original log-odds z",
+  "same_state_permutation_as_previous": true,
+  "vertical_jitter": false,
+  "marker_area": 28,
+  "marker_alpha": 0.8,
+  "epsilon_for_display_only": 1e-06,
+  "png_sha256": "9ee087d58b44532bc4ccaf95e55dc8b379dcac4f88536f3ab8ec181e3aae4bc5",
+  "svg_sha256": "ef693355cbdebb9df1ca70b4ee9e28d5bdecf09b969178b38ec748e6210a26f3",
+  "script_sha256": "9c9962ac6958e7a3254ad3e4c7e5eab8afcf3f85d7dfd877f3feb4ffe79472a9"
+}

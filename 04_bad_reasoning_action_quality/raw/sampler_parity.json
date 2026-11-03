@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "mode": "forbid",
+      "exact_greedy_IDs_equal": true
+    },
+    {
+      "mode": "force",
+      "exact_greedy_IDs_equal": true
+    },
+    {
+      "mode": "natural",
+      "exact_greedy_IDs_equal": true
+    }
+  ]
+}

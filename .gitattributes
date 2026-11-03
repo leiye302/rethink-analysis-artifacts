@@ -1,0 +1,3 @@
+# Preserve the byte-level fingerprints of scientific records across platforms.
+* -text
+*.png binary
