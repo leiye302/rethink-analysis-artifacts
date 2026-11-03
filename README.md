@@ -84,6 +84,8 @@ python 03_rethink_insertion/plot.py --output-dir reproduced/03_rethink_insertion
 
 `verify_data.py` 仅使用 Python 标准库，逐文件校验 `SHA256SUMS.txt`，从原始记录重算四项数字、配对关系、候选概率和监督边界。`plot_all.py` 离线重绘四项到 `reproduced/`。
 
+实际的干净检出、全新虚拟环境安装与四项重绘结果见 [离线复现验证记录](REPRODUCTION.md)。
+
 **复现范围：**这里验证的是“仓库内原始测量 → 数值核验 → 图”。不包含模型权重，不声称仅凭本仓库可重新执行原始 GPU 训练／推理实验。ALFWorld 环境观察、动作、静态 skill 和记录的审核属于本次分析数据；没有上传账号、SSH、API 密钥、机器配置或无关训练日志。
 
 许可未另行指定；本次先按私有研究资料整理，公开和再分发前请核对原始数据与上游资产的适用许可。
