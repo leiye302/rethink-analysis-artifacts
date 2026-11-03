@@ -1,17 +1,15 @@
-# RETHINK：四项分析实验的图、原始数据与重绘脚本
+# RETHINK：四项分析实验的图、原始数据与脚本
 
-本仓库按四个实验分目录，收录现有图、逐决策／逐 token 原始测量、数据表、指标定义和离线重绘脚本。**第三张使用真实的 1000 个配对样本、2000 个条件观测；不包含旧的重复散点预览。**
+本仓库按四个实验分目录，收录现有图、逐决策／逐 token 原始测量、数据表、指标定义和离线重绘脚本。
 
 ## 四项实验一览
 
-| 文件夹 | 要回答的问题 | 实际样本单位 | 主要结果 |
-| --- | --- | --- | --- |
-| [01：基线信号分布](01_baseline_signal_distribution/) | 基线中 Reasoning 和 Action 的 sampled-token Teacher–Student 差异有多大？ | 同一批 200 个环境决策，每个决策各算两个区域均值 | Action 均值 0.0346 nat；Reasoning 0.2340 nat |
-| [02：Reasoning 条件干预](02_reasoning_intervention/) | 在相同历史下，正确／删除／错误 Reasoning 怎样影响下一步动作？ | 22 个配对状态 × 3 条件 × Teacher／Student = 132 个动作续写 | 正确 R：19/22、17/22；删除 R：13/22、13/22；错误 R：10/22、9/22 |
-| [03：RETHINK 插入干预](03_rethink_insertion/) | 固定 H/R，只插入一个 marker，目标纠正动作的候选概率如何变化？ | 1000 条真实 SFT train-Bad 样本 × 两条件 = 2000 个观测 | 平均 Q：0.1208 → 0.6119；918 对上升、82 对下降 |
-| [04：三种触发模式](04_bad_reasoning_action_quality/) | 禁止／强制／自主触发时，生成已确认合理动作的比例怎样变化？ | 13 个固定 Bad 状态 × 每模式 16 次 = 每模式 208 次生成 | 17/208、164/208、64/208；未判定保留为 unknown |
-
-四项不是同一批样本，不能合并分母。Q、单步参考命中、已确认合理动作比例和 sampled-token gap 是不同指标；均不能直接改称完整 episode 成功率。
+| 文件夹 | 要回答的问题 | 主要结果 |
+| --- | --- | --- |
+| [01：基线信号分布](01_baseline_signal_distribution/) | 基线中 Reasoning 和 Action 的 sampled-token Teacher–Student 差异有多大？ | Action 均值 0.0346 nat；Reasoning 0.2340 nat |
+| [02：Reasoning 条件干预](02_reasoning_intervention/) | 在相同历史下，正确／删除／错误 Reasoning 怎样影响下一步动作？ | 正确 R：19/22、17/22；删除 R：13/22、13/22；错误 R：10/22、9/22 |
+| [03：RETHINK 插入干预](03_rethink_insertion/) | 固定 H/R，只插入一个 marker，后续动作的正确概率如何变化？ | 正确动作平均概率 Q：0.1208 → 0.6119 |
+| [04：三种触发模式](04_bad_reasoning_action_quality/) | 禁止／强制／自主触发rethink标记时，生成正确动作的比例怎样变化？ | 禁止：17/208、强制：164/208、自主：64/208|
 
 ## 01 · 基线 Reasoning / Action 信号分布
 
