@@ -6,7 +6,7 @@
 
 | 文件夹 | 要回答的问题 | 主要结果 |
 | --- | --- | --- |
-| [01：基线信号分布](01_baseline_signal_distribution/) | 基线中 Reasoning 和 Action 的 sampled-token Teacher–Student 差异有多大？ | Action 均值 0.0346 nat；Reasoning 0.2340 nat |
+| [01：基线信号分布](01_baseline_signal_distribution/) | 基线中 Reasoning 和 Action 的 Teacher–Student 信号差异有多大？ | Action 均值为 0.0346 ；Reasoning均值为 0.2340 |
 | [02：Reasoning 条件干预](02_reasoning_intervention/) | 在相同历史下，正确／删除／错误 Reasoning 怎样影响下一步动作？ | 正确 R：19/22、17/22；删除 R：13/22、13/22；错误 R：10/22、9/22 |
 | [03：RETHINK 插入干预](03_rethink_insertion/) | 固定 H/R，只插入一个 marker，后续动作的正确概率如何变化？ | 正确动作平均概率 Q：0.1208 → 0.6119 |
 | [04：三种触发模式](04_bad_reasoning_action_quality/) | 禁止／强制／自主触发rethink标记时，生成正确动作的比例怎样变化？ | 禁止：17/208、强制：164/208、自主：64/208|
