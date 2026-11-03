@@ -15,35 +15,25 @@
 
 ![基线信号分布](01_baseline_signal_distribution/figures/figure.png)
 
-横轴为每个决策内部的平均绝对 Teacher–Student sampled-token log-probability gap，纵轴为分箱百分比。紫色是 Action，灰色是 Reasoning；虚线是均值，实线是平滑后的分箱概率，y 轴断开处已标出。200 个决策中，149 个 Action 区域均值落在 [0, 0.02) nat。
-
-使用 Qwen2.5-3B GRPO+OPSD 基线 update150，对其自身训练归档决策重新评分；Teacher 与 Student 权重相同，Teacher 额外看到静态 task-family skill。归档文本存在重新分词，不能当作原训练 token 批次的逐位重放。
+测量了每个决策内部的平均绝对 Teacher–Student sampled-token log-probability gap，紫色是 Action，灰色是 Reasoning，虚线是均值，实线是平滑后的分箱概率，y 轴断开处已标出。由图可见，action的平均信号远远弱于reasoning的平均信号，用于直观展现motivation。
 
 ## 02 · 相同 History 下改变 Reasoning
 
 ![Reasoning 条件对比](02_reasoning_intervention/figures/figure.png)
 
-外环 Teacher、内环 Student；蓝色表示下一步动作命中冻结参考集合，紫色表示未命中。两者使用同一基线 update150 权重，区别仅在 Teacher 的静态 skill。三列分别给定已审核正确的 Teacher R、清空正文但保留标签的 R、已审核错误的 Student R。
+外环为 Teacher 模型、内环为 Student 模型，蓝色表示下一步动作属于正确动作，紫色表示动作不是正确动作，分为三种情况：提供正确的reasoning前缀，提供错误的reasoning前缀和删除reasoning前缀，用于展现教师的额外信息能造成的改变远小于reasoning对后续的影响，辅助说明reasoning对action的lock-in效果。
 
-22 个状态是“Student R 错误且 Teacher R 审核正确”的条件子集。图上 Success 应读为**下一步动作参考集命中**，不是 episode success；未命中不自动等于所有语义口径下都错误。
-
-## 03 · 真实 1000 对样本的插入／不插入散点
+## 03 · 插入rethink标记对动作正确率的影响
 
 ![真实1000对RETHINK干预](03_rethink_insertion/figures/figure.png)
 
-从既有 SFT train split 的 6000 条 Bad 中用 seed=20261103 随机抽 1000 条，保留原始 H/R。冻结的方法模型为 Qwen2.5-3B Route-SFT2000 → OPSD150；两个条件只差 reasoning/action 边界处一个注册的 `<RETHINK>` token。不使用 Teacher、hint、Analyzer 或 API。
+抽取了1000条bad reasoning作为前缀，在同样的前缀下分为插入rethink标记与不插入rethink标记，共2000个样本点，让 ours 方法的模型进行自由生成，比较插入rethink标记后的动作正确率，用于说明rethink标记的确解除了reasoning对action的lock-in效果，起到了纠错的作用。
 
-蓝色是不插入，橙色是插入后，各 1000 个真实观测。Q 是数据中单个 Oracle 动作的完整动作序列似然在记录的 admissible 动作集合内归一化后的概率；它不是完整任务成功率，也不是所有合理动作的概率之和。
-
-纵轴为 $z=\log_{10}[Q/(1-Q)]$，显示位置共同使用反双曲正弦变换 `asinh(z)`，刻度仍标原始 z；仅显示时把 Q 裁剪到 $[10^{-6},1-10^{-6}]$，原始 Q 不变。横轴是固定随机展示顺序。右侧是在原始 z 空间、共用带宽的 KDE，不含重复扩增。
-
-这是 **SFT 训练样本上的条件诊断**，不是 held-out 泛化、自由生成路由率或自然触发效果评测。其采样来源和旧 100 状态实验不同，不混用旧均值 0.311 → 0.738。
-
-## 04 · Bad Reasoning 下的动作合理性
+## 04 · 禁止触发，强制触发rethink标记与自由生成时的动作正确率比较
 
 ![三种触发模式](04_bad_reasoning_action_quality/figures/figure.png)
 
-同一方法 update150 权重，在固定 R 后分别禁止 marker、预填 marker、无干预自主续写。蓝色为已确认合理，斜线紫色是其余，**包括已确认不合理与 unknown，不能全叫错误**。13 个状态每个各模式采样 16 次，temperature=0.4；并不是 208 个独立环境状态。
+在固定 Reasoning 后分别禁止 rethink标记、强制插入 rethink标记和自由生成。蓝色为正确动作的概率，斜线紫色是不正确动作的概率，用于展现插入rethink标记对后续动作正确率影响的另一种表达形式（和第三个有点重复，图表形式不同）
 
 ## 仓库内有什么
 
